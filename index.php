@@ -8,8 +8,8 @@ define('TABLE_NAME', 'jobs_table');
 require "vendor/autoload.php";
 
 
-//$server = "https://builds.apache.org/";
-$server = "https://localhost:8080/";
+$server = "https://builds.apache.org/";
+//$server = "https://localhost:8080/";
 $db_path = "contact.db";
 
 if(isset($argv[1])) {
@@ -30,13 +30,13 @@ if( $count > 0) {
     $db = SqliteDb::instance($db_path);
     $conn = $db->getConnection();
 
-    foreach ($job_info as $job) {
+    foreach ($job_info as $jobs) {
 
         $job = new Job($conn);
         
         $job->insert([
-            'name' => $job->name,
-            'status' => $job->status
+            'name' => $jobs->name,
+            'status' => $jobs->status
         ]);
 
     }
