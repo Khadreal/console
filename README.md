@@ -1,24 +1,21 @@
-# Jenkins api reader - Seedstars challenge 2
+# PHP Engineer Console Script
 
 **console script**
 
-Create a script, in PHP, that uses Jenkins' API to get a list of jobs and their status from a given jenkins instance. The status for each job should be stored in an sqlite database along with the time for when it was checked.
+Jenkins (http://jenkins-ci.org/) is a open source continuous integration server.
+
+Create a script, in PHP, that uses Jenkins' API to get a list of  jobs and their status from a given jenkins instance.  The status for each job should be stored in an sqlite  database along with the time for when it was checked.
 
 **Usage/Installation**
 
 ```
 # clone repository
-$ git clone https://github.com/barmmie/jenkins-script.git
+$ git clone https://github.com/Khadreal/console.git
 
 # change directory
-$ cd jenkins-script
+$ cd console-script
 
 # run script with default server "https://builds.apache.org"
-$ php jenkins.php
-
-# You can also specify a server or/and database in this format "php jenkins.php {server} {database} " E.g
-$ php jenkins.php https://jenkins.qa.ubuntu.com ./ubuntu.db
-```
-
+$ php index.php
 
 
