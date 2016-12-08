@@ -15,7 +15,7 @@ $ git clone https://github.com/Khadreal/console.git
 # change directory
 $ cd console-script
 
-# run script with default server "https://builds.apache.org"
+# run script with default server "https://localhost:8080"
 $ php index.php
 
 
